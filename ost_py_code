@@ -1,0 +1,25 @@
+# here program begings
+ch="yes"
+while ch=="yes":
+  print("\t\t\tMAIN MENU\n\t1.Addition\t\t3.Division\t5.Modulus\n\t2.Subtraction\t4.Multiplication\t6.Floor division")
+  first=float(input("Enter the first value : "))
+  second=float(input("Enter the second value:"))
+  operator=input("Enter the sr.no. of the given operator (1/2/3/4/5/6) : ")
+  if (first>0 and second>0):
+	  if operator=='1':
+		  print("The addition of the given numbers is :",first+second)
+	  elif operator=='2':
+		  print("The subtraction of the given numbers is :  ",first-second)
+	  elif operator=='3':
+		  print("The division of the given numbers is :",first/second)
+	  elif operator=='4':
+		  print("The multiplication of the goven numbers is :",first*second)
+	  elif operator=='5':
+		  print("The Modulus of the given numbers is :",first%second)
+	  elif operator=='6':
+		  print("The floor division of the given numbers is :",first//second)
+	  else:
+		  print("Invalid input")
+  else:
+	  print("The given number is negative")
+  ch=input("Do you want to continue(yes/no):")
